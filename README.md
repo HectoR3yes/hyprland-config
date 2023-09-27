@@ -13,6 +13,31 @@ git clone --recursive https://github.com/hyprwm/Hyprland
 cd Hyprland
 sudo make install
 ```
+## Critical Software
+
+```shell
+pacman -Sy dunst
+```
+
+```shell
+pacman -Sy pipewire pipewire-alsa pipewire-audio pipewire-pulse pipewire-jack wireplumber
+```
+
+```shell
+yay -S xdg-desktop-portal-hyprland-git xdg-desktop-portal-gtk
+```
+
+```
+pacman -Sy qt6-wayland qt5-wayland
+```
+
+```shell
+pacman -Sy polkit-kde-agent
+```
+
+```shell
+yay -S sddm-git
+```
 
 ## Kitty Installation
 
