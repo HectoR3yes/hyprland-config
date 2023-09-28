@@ -20,7 +20,7 @@ pacman -Sy dunst
 ```
 
 ```shell
-pacman -Sy pipewire pipewire-alsa pipewire-audio pipewire-pulse pipewire-jack wireplumber
+pacman -Sy pipewire pipewire-alsa pipewire-audio pipewire-pulse pipewire-jack wireplumber pamixer pavucontrol
 ```
 
 ```shell
