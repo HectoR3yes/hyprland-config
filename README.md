@@ -67,5 +67,5 @@ gpasswd -a h3ct0r network
 ## Others
 
 ```shell
-yay -S ttf-font-awesome ttf-jetbrains-mono ttf-icomoon-feather
+yay -S ttf-font-awesome ttf-jetbrains-mono ttf-icomoon-feather grim slurp  
 ```
