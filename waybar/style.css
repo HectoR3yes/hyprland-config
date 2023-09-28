@@ -37,7 +37,7 @@ window#waybar {
   color: #b4befe;
 }
 
-#backlight , #pulseaudio, #bluetooth, #tray, #network, #battery {
+#backlight , #pulseaudio, #pulseaudio.microphone, #bluetooth, #tray, #network, #battery, #custom-power_btn {
   border-radius: 10px;
   background-color: #11111b;
   color: #cdd6f4;
@@ -47,14 +47,18 @@ window#waybar {
   margin-right: 5px;
 }
 
-#backlight, #bluetooth, #tray {
+#custom-power_btn {
+  padding-right: 12px
+}
+
+#backlight, #pulseaudio, #bluetooth, #tray {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   padding-right: 0px;
   margin-right: 0px
 }
 
-#pulseaudio, #network, #tray {
+#pulseaudio, #pulseaudio.microphone, #network, #tray {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   padding-left: 5px;
