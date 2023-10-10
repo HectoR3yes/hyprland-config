@@ -1,6 +1,8 @@
 # hyprland-config (Zephyrus G14 2022)
 ![swappy-20231010_150945](https://github.com/HectoR3yes/hyprland-config/assets/77632055/07e93e87-9246-44ca-8051-932644728f5d)
 
+![htb](https://github.com/HectoR3yes/hyprland-config/assets/77632055/51334a52-23f9-427c-9e58-a2bc33ee5a21)
+
 ## Installing Hyprland Dependencies
 
 ```shell
