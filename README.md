@@ -1,4 +1,5 @@
 # hyprland-config
+![swappy-20231010_150945](https://github.com/HectoR3yes/hyprland-config/assets/77632055/07e93e87-9246-44ca-8051-932644728f5d)
 
 ## Installing Hyprland Dependencies
 
