@@ -1,0 +1,112 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 0,
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+    
+  "modules-left": [
+  "custom/arch",
+  "custom/power_profile",
+  "backlight",
+  "pulseaudio",
+  "pulseaudio#microphone",
+  "custom/network_status",
+  ],
+
+  "modules-center": [
+  "hyprland/workspaces"
+  ],
+
+  "modules-right": [
+  "custom/vpn_status",
+  "custom/target_status",
+  "tray", 
+  "battery",
+  "custom/power_btn",
+  ],
+
+
+    "custom/arch": {
+      "format": " 󰣇 ",
+      "on-click": "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown",
+      "tooltip": false
+    },
+    "hyprland/workspaces": {
+      "format": "{name}",
+      "format": "{icon}",
+      "tooltip": false,
+      "all-outputs": true,
+      "format-icons": {
+        "active": "",
+        "default": ""
+      }
+    },
+    "custom/power_profile": {
+        //shows the current power profile and switches to next on click
+        "exec": "asusctl profile -p | sed s:'Active profile is'::",
+        "interval": 30,
+        "format": "󰈐 {}", 
+        "on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",
+        "signal": 8
+    },
+    "backlight": {
+      "device": "intel_backlight",
+      "format": "<span color='#b4befe'>{icon}</span> {percent}%",
+      "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "pulseaudio": {
+      "format": "<span color='#b4befe'>{icon}</span> {volume}%",
+      "format-muted": "",
+      "tooltip": false,
+      "format-icons": {
+        "headphone": "",
+        "default": ["", "", "󰕾", "󰕾", "󰕾", "", "", ""]
+      },
+      "scroll-step": 1,
+    },
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": "<span color='#b4befe'></span> {volume}%",
+        "format-source-muted": "<span color='#b4befe'></span>",
+        //"on-click": "pamixer --default-source -t",
+        //"on-click-right": "pavucontrol",
+        //"on-scroll-up": "pamixer --default-source -i 5",
+        //"on-scroll-down": "pamixer --default-source -d 5",
+        //"scroll-step": 5
+    },
+    "custom/network_status": {
+        "exec": "~/.config/waybar/scripts/network-status.sh",
+        "interval": 5,
+        "format": "󰈀  {}" 
+    },
+    "custom/vpn_status": {
+      "exec": "~/.config/waybar/scripts/vpn-status.sh",
+      "interval": 5,
+      "format": "{}"
+    },
+    "custom/target_status": {
+      "exec": "~/.config/waybar/scripts/target-status.sh",
+      "interval": 5,
+      "format": {}
+    },
+    "tray": {
+      "spacing": 3
+    },
+  	"battery": {
+          "states": {
+              "good": 95,
+              "warning": 30,
+              "critical": 15
+          },
+          "format": "<span color='#b4befe'>{icon}  </span> {capacity}%",
+          "format-charging": "{capacity}% ",
+          "format-plugged": "{capacity}% ",
+          "format-alt": "{icon} {time}",
+          // "format-good": "", // An empty format will hide the module
+          // "format-full": "",
+          "format-icons": ["", "", "", "", ""]
+	},
+}
+
