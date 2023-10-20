@@ -70,5 +70,5 @@ gpasswd -a h3ct0r network
 ## Others
 
 ```shell
-yay -S ttf-jetbrains-mono grim slurp swappy
+yay -S ttf-jetbrains-mono imagemagick grim slurp swappy
 ```
