@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ifconfig | grep wlp5s0 -A 1 | grep "inet" | awk '{print $2}'
+ifconfig | grep wlan0 -A 1 | grep "inet" | awk '{print $2}'
