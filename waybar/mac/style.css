@@ -1,0 +1,55 @@
+*{
+ font-family: "Hack Nerd Font";
+ font-size: 13px;
+}
+
+window#waybar {
+ background: transparent;
+}
+
+#custom-wlogout,
+#workspaces,
+#cpu,
+#memory,
+#temperature,
+#clock,
+#cava,
+#network,
+#pulseaudio,
+#battery,
+#tray {
+ margin-top: 5px;
+ border-radius: 10px;
+ background-color: #272829;
+ color: #D6E4E5;
+}
+
+#custom-wlogout {
+ padding-left: 8px;
+ padding-right: 10px;
+ font-size: 15;
+ color: #D6E4E5;
+}
+
+#cpu,
+#memory,
+#temperature,
+#clock,
+#cava,
+#network,
+#pulseaudio,
+#battery,
+#tray {
+ padding-left: 6px;
+ padding-right: 6px;
+}
+
+#workspaces button.persistent {
+ color: #52D3D8;
+}
+#workspaces button.empty {
+ color: #D6E4E5;
+}
+#workspaces button.active {
+ color: #FDE767;
+}
